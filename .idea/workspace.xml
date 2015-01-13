@@ -29,11 +29,11 @@
       <file leaf-file-name="search.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Wk1/goal3_assign_debug_v2/js/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9550225" vertical-offset="413" max-vertical-offset="2010">
-              <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.66266865" vertical-offset="878" max-vertical-offset="2010">
+              <caret line="88" column="101" selection-start-line="88" selection-start-column="101" selection-end-line="88" selection-end-column="101" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1421119334000" expanded="true" signature="3337:3352" placeholder="..." />
+                <marker date="1421122915000" expanded="true" signature="3924:3939" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -232,7 +232,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39253733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39253733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -392,11 +392,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Wk1/goal3_assign_debug_v2/js/search.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9550225" vertical-offset="413" max-vertical-offset="2010">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.66266865" vertical-offset="878" max-vertical-offset="2010">
+          <caret line="88" column="101" selection-start-line="88" selection-start-column="101" selection-end-line="88" selection-end-column="101" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1421119334000" expanded="true" signature="3337:3352" placeholder="..." />
+            <marker date="1421122915000" expanded="true" signature="3924:3939" placeholder="..." />
           </folding>
         </state>
       </provider>

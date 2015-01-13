@@ -49,7 +49,7 @@
 		var results = [];											// Matching results from database for variable results
 
 		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++){						// For loop of database array instead of listing of each item in array
+		for(var i=0, j=db.length; i<j; i++){						// For loop listing length of database array
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
@@ -58,35 +58,35 @@
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
-			for(var ii=0, jj=queryArray.length; ii<jj; ii++){
-				var qitem = queryArray[ii].tolowercase();
+			for(var ii=0, jj=queryArray.length; ii<jj; ii++){		// For loop for users search in query
+				var qitem = queryArray[ii].tolowercase();			// Search keyword will be saved in lowercase
 				
 				// is the keyword anywhere in the video title?
 				// If a match is found, push full db[i] into results array
-				var compare = dbitem.indexOf(qitem);
-				if(compare !== -1){
-					results.push(db[i]);
+				var compare = dbitem.indexOf(qitem);				// Declare compare variable to see if search keyword is in video title
+				if(compare !== -1){									// If search keyword matches video item
+					results.push(db[i]);							// Add video item into db array
 				};
 			;
 		;
 		
-		results.sort();
+		results.sort();												// Sort out the array alphabetically
 		
 		// Check that matches were found, and run output functions
-		if(results.length = 0){
-			noMatch();
-		}else{
-			showMatches(results);
+		if(results.length = 0){										// If length of results is equal to zero
+			noMatch();												// Display no match
+		}else{														// If there are results
+			showMatches(results);									// Show matching results
 		};
 	};
 	
 	// Put "No Results" message into page (DO NOT FIX THE HTML VAR NOR THE innerHTML)
-	var noMatch = function(){
-		var html = ''+
-			'<p>No Results found.</p>'+
-			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>'
+	var noMatch = function(){										// Declare no match variable to function
+		var html = ''+												// Declare variable html alert window
+			'<p>No Results found.</p>'+								// Display paragraph "No Results found." in html alert window
+			'<p style="font-size:10px;">Try searching for "JavaScript".  Just an idea.</p>' // Display "Try searching for "JavaScript".  Just an idea." in html alert window
 		;
-		resultsDIV.innerHTML = html;
+		resultsDIV.innerHTML = html;								// Declare DOM element for "Html"
 	};
 	
 	// Put matches into page as paragraphs with anchors
