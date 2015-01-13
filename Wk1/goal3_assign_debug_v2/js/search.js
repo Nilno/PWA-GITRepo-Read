@@ -46,15 +46,15 @@
 		var queryArray = query.join(" ");							// Assign joining of elements for query array
 		
 		// array to store matched results from database.js
-		var results = [];											// Display matching results from database
+		var results = [];											// Matching results from database for variable results
 
 		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++){						// 
+		for(var i=0, j=db.length; i<j; i++){						// For loop of database array instead of listing of each item in array
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
-			var dbTitleEnd = db[i].indexOf('|');
-			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);
+			var dbTitleEnd = db[i].indexOf('|');					// Will show end of database title
+			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);	// Video item will be in lowercase to be saved to database
 			
 			// loop through the user's search query words
 			// save a lowercase variable of the search keyword
