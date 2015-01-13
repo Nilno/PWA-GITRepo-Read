@@ -53,7 +53,7 @@
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
-			var dbTitleEnd = db[i].indexOf('|');					// Will show end of database title
+			var dbTitleEnd = db[i].indexOf('|');					// Will save end of database title
 			var dbitem = db[i].tolowercase().substring(0, dbTitleEnd);	// Video item will be in lowercase to be saved to database
 			
 			// loop through the user's search query words
@@ -90,40 +90,40 @@
 	};
 	
 	// Put matches into page as paragraphs with anchors
-	var showMatches = function(results){
+	var showMatches = function(results){							// Declare variable to show matches on page
 		
 		// THE NEXT 4 LINES ARE CORRECT.
-		var html = '<p>Results</p>', 
-			title, 
-			url
+		var html = '<p>Results</p>', 								// Declare html variable to show "Results" in paragraph with anchor on page
+			title, 													// Show title of result(s) in paragraph with anchor on page
+			url														// Show url link of result(s) in paragraph with anchor on page
 		;
 		
 		// loop through all the results search() function
-		for(var i=0, j=results.length; i<j; i++){
+		for(var i=0, j=results.length; i<j; i++){					// For loop listing length for results of search() function
 		
 			// title of video ends with pipe
 			// pull the title's string using index numbers
-			titleEnd = results[i].indexOf('|');
-			title = results[i].subString(0, titleEnd);
+			titleEnd = results[i].indexOf('|');						// Will save end of results title
+			title = results[i].subString(0, titleEnd);				// Result(s) title string will be in index numbers
 			
 			// pull the video url after the title
-			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);
+			url = results[i].substring(results[i].indexOf('|')+1, results[i].length);	// Result(s) title will display first then url after
 			
 			// make the video link - THE NEXT LINE IS CORRECT.
-			html += '<p><a href=' + url + '>' + title + '</a></p>';
+			html += '<p><a href=' + url + '>' + title + '</a></p>';		// Display video url as link
 		};
-		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.
+		resultsDIV.innerHTML = html; //THIS LINE IS CORRECT.			// Declare DOM element for "html"
 	};
 	
 	// The onsubmit event will be reviewed in upcoming Course Material.
 	// THE LINE DIRECTLY BELOW IS CORRECT
-	document.forms[0].onsubmit = function(){
-		var query = searchInput.value;
-		validqte(query);
+	document.forms[0].onsubmit = function(){							// Execute JavaScript when document form is submitted
+		var query = searchInput.value;									// Declare DOM element for the value of the search when document form is submitted
+		validqte(query);												// Return query function
 
         // return false is needed for most events - this will be reviewed in upcoming course material
         // THE LINE DIRECTLY BELOW IS CORRECT
-		return false;
+		return false;													// Return document form after it is submitted
 	;
 
 })();
