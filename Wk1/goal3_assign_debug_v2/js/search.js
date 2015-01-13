@@ -1,46 +1,55 @@
+/*
+ Name: Amaren Read
+ Date: 1-11-2015
+ Class & Section:  PWA1-Sec 1
+ Comments: "Goal 3: Buggy Search Engine"
+ */
+
+
+
 // Create privatized scope using a self-executing function
 (function(){
 	
 	// Variable initialization (DO NOT FIX ANY OF THE BELOW VAR's)
-	var resultsDIV = document.getElementById("results"),
-		searchInput = document.forms[0].search,
-		currentSearch = ''
+	var resultsDIV = document.getElementById("results"),			// Declare DOM element for search "Results"
+		searchInput = document.forms[0].search,						// Declare DOM element for search "Input"
+		currentSearch = ''											// Declare current search as empty string
 	;
 	
 	// Validates search query
-	var validqte == function(query){
+	var validqte == function(query){								// Assign anonymous function to variable "validate"
 		
 		// Trim whitespace from start and end of search query
-		while(query.charAt(0) = " "){
-			query = query.substring(1, query.length);
+		while(query.charAt(0) = " "){								// Start while loop to see if query is empty
+			query = query.substring(1, query.length);				// Extracts first character from query input string
 		};
-		while(query.charAt(query.length-1) === ""){
-			query = query.substring(0, query.length-1);
+		while(query.charAt(query.length-1) === ""){					// Start while loop to see the length of what user inputs
+			query = query.substring(0, query.length-1);				// Extracts second character from query input string
 		;
 		
 		// Check search length, must have 3 characters
-		if(query.length < 3){
-			alert("Your search query is too small, try again.);
+		if(query.length < 3){										// If user input in query is less then three
+			alert("Your search query is too small, try again.);		// Alert window to notify user to input at least three characters
 			
 			// (DO NOT FIX THE LINE DIRECTLY BELOW)
-			searchInput.focus();
-			return;
+			searchInput.focus();									// After a search the location input is cleared for next search input
+			return;													// Breaks input function execution
 		};
 		
-		search(query);
+		search(query);												// Return query function execution/specifies a value to function caller
 	};
 	
 	// Finds search matches
-	var search = function(query)
+	var search = function(query)									// Assign anonymous function to variable "Search"
 		
 		// split the user's search query string into an array
-		var queryArray = query.join(" ");
+		var queryArray = query.join(" ");							// Assign joining of elements for query array
 		
 		// array to store matched results from database.js
-		var results = [];
+		var results = [];											// Display matching results from database
 
 		// loop through each index of db array
-		for(var i=0, j=db.length; i<j; i++){
+		for(var i=0, j=db.length; i<j; i++){						// 
 		
 			// each db[i] is a single video item, each title ends with a pipe "|"
 			// save a lowercase variable of the video title
